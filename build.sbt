@@ -23,7 +23,7 @@ lazy val commonSettings = Seq(
       url = url("https://github.com/AnderEnder")
     ),
   ),
-  scalaVersion := "2.12.12",
+  scalaVersion := "2.12.13",
   resolvers += Resolver.sonatypeRepo("staging"),
   scalacOptions ++= Seq(
     "-deprecation",
@@ -88,7 +88,7 @@ lazy val `fsi-macros` = project
     crossScalaVersions := Seq("2.13.3", scalaVersion.value, "2.11.12"),
     libraryDependencies ++= Seq(
       "org.scala-lang" % "scala-reflect" % scalaVersion.value,
-      "org.scalatest" %% "scalatest" % "3.2.4" % Test
+      "org.scalatest" %% "scalatest" % "3.2.5" % Test
     )
   )
 
@@ -100,7 +100,7 @@ lazy val `fsi-benchmark-core` = project
   .settings(
     crossScalaVersions := Seq("2.13.3", scalaVersion.value, "2.11.12"),
     libraryDependencies ++= Seq(
-      "org.scalatest" %% "scalatest" % "3.2.4" % Test
+      "org.scalatest" %% "scalatest" % "3.2.5" % Test
     )
   )
 
@@ -114,7 +114,7 @@ lazy val `fsi-benchmark` = project
     libraryDependencies ++= Seq(
       "com.dongxiguo" %% "fastring" % "1.0.0",
       "com.outr" %% "perfolation" % "1.1.7",
-      "com.outr" %% "scribe-slf4j" % "2.8.6" % Test,
-      "org.scalatest" %% "scalatest" % "3.2.4" % Test
+      "com.outr" %% "scribe-slf4j" % "2.7.13" % Test,
+      "org.scalatest" %% "scalatest" % "3.2.5" % Test
     )
   )
