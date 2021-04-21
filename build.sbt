@@ -85,10 +85,10 @@ lazy val `fsi-macros` = project
   .settings(commonSettings)
   .settings(publishSettings)
   .settings(
-    crossScalaVersions := Seq("2.13.3", scalaVersion.value, "2.11.12"),
+    crossScalaVersions := Seq("2.13.5", scalaVersion.value, "2.11.12"),
     libraryDependencies ++= Seq(
       "org.scala-lang" % "scala-reflect" % scalaVersion.value,
-      "org.scalatest" %% "scalatest" % "3.2.7" % Test
+      "org.scalatest" %% "scalatest" % "3.2.8" % Test
     )
   )
 
@@ -98,9 +98,9 @@ lazy val `fsi-benchmark-core` = project
   .settings(commonSettings)
   .settings(noPublishSettings)
   .settings(
-    crossScalaVersions := Seq("2.13.3", scalaVersion.value, "2.11.12"),
+    crossScalaVersions := Seq("2.13.5", scalaVersion.value, "2.11.12"),
     libraryDependencies ++= Seq(
-      "org.scalatest" %% "scalatest" % "3.2.7" % Test
+      "org.scalatest" %% "scalatest" % "3.2.8" % Test
     )
   )
 
@@ -114,7 +114,7 @@ lazy val `fsi-benchmark` = project
     libraryDependencies ++= Seq(
       "com.dongxiguo" %% "fastring" % "1.0.0",
       "com.outr" %% "perfolation" % "1.1.7",
-      "com.outr" %% "scribe-slf4j" % "2.8.6" % Test,
-      "org.scalatest" %% "scalatest" % "3.2.7" % Test
+      "com.outr" %% "scribe-slf4j" % "2.7.13" % Test,
+      "org.scalatest" %% "scalatest" % "3.2.8" % Test
     )
   )
